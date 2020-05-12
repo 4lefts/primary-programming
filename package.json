@@ -1,0 +1,19 @@
+{
+  "name": "primary-programming",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.10.0",
+    "markdown-it": "^10.0.0",
+    "markdown-it-anchor": "^5.2.7",
+    "markdown-it-implicit-figures": "^0.10.0",
+    "markdown-it-table-of-contents": "^0.4.4"
+  }
+}
