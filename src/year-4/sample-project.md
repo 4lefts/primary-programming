@@ -1,6 +1,5 @@
 ---
 title: Sample Project
-tags: y4
 ---
 
 # {{title}}

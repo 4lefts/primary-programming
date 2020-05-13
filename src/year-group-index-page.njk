@@ -17,10 +17,10 @@ layout: default.njk
 
 <h2>Projects</h2>
 
-{%- if collections[year.projectTag] %}
+{%- if collections[year.title] %}
 
 <ol>
-{%- for project in collections[year.projectTag] -%}
+{%- for project in collections[year.title] -%}
 <li><a href="{{project.url}}">{{project.data.title}}</a></li>
 {%- endfor -%}
 </ol>

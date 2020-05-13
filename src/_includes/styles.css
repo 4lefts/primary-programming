@@ -117,3 +117,7 @@ th {
   border: 1px solid var(--font-color);
   padding: 5px;
 }
+
+li.current-project a {
+  color: hotpink;
+}
