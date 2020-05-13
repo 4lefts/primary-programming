@@ -13,6 +13,7 @@ html {
   /* typography */
   --base-font-stack: "Roboto", sans-serif;
   --font-size: 16px;
+  --line-height: 1.8em;
   --font-color: rgba(0, 0, 0, 0.825);
   /* material shadows */
   --shadow-1: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
@@ -31,10 +32,10 @@ html {
 body {
   margin: 0;
   padding: 0;
-  font-size: var(--font-color);
+  line-height: var(--line-height);
+  font-size: var(--font-size);
   font-family: var(--base-font-stack);
   color: var(--font-color);
-  line-height: 28px;
 }
 
 nav {
@@ -98,6 +99,12 @@ main code {
 main figure,
 main table {
   width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+main figure img {
+  width: 100%;
 }
 
 a {
@@ -108,6 +115,41 @@ a:hover {
   color: var(--highlight-color);
 }
 
+p code {
+  background-color: gainsboro;
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+pre {
+  background-color: whitesmoke;
+  padding: var(--gutter);
+}
+
+blockquote {
+  background: whitesmoke;
+  border-left: 10px solid gainsboro;
+  margin: 0;
+  padding: 0.5em 15px;
+}
+
+blockquote::before {
+  color: var(--highlight-color);
+  content: "\1f6c8";
+  font-size: 1.8em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.1em;
+}
+
+blockquote p {
+  display: inline;
+}
+
+li.current-project a {
+  color: hotpink;
+}
+
 table {
   border-collapse: collapse;
 }
@@ -116,8 +158,4 @@ td,
 th {
   border: 1px solid var(--font-color);
   padding: 5px;
-}
-
-li.current-project a {
-  color: hotpink;
 }
