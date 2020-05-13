@@ -1,0 +1,29 @@
+---
+pagination: 
+  data: years
+  size: 1
+  alias: year
+permalink: "/{{year.title | slug}}/"
+layout: default.njk
+---
+<h1>{{year.title}}</h1>
+<h2>Objectives</h2>
+
+{% for curriculum in collections.curricula -%}
+{%- if curriculum.data.title == year.title -%}
+{{curriculum.templateContent | safe}}
+{%- endif -%}
+{%- endfor %}
+
+<h2>Projects</h2>
+
+{%- if collections[year.projectTag] %}
+
+<ol>
+{%- for project in collections[year.projectTag] -%}
+<li><a href="{{project.url}}">{{project.data.title}}</a></li>
+{%- endfor -%}
+</ol>
+{%- else %}
+Projects coming soon
+{%- endif -%}

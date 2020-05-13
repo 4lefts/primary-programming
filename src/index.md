@@ -1,5 +1,5 @@
 ---
-layout: layout.njk
+layout: default.njk
 ---
 
 # Primary Programming

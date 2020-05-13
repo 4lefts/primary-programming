@@ -1,3 +1,4 @@
 {
-  "layout": "layout.njk"
+  "layout": "default.njk",
+  "tags": "y4"
 }

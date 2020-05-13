@@ -19,6 +19,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.setLibrary("md", mdIt);
   eleventyConfig.addPassthroughCopy({ "src/static": "static" });
   return {
+    markdownTemplateEngine: "njk",
     dir: {
       input: "src",
     },

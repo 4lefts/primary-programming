@@ -1,5 +1,5 @@
 ---
-layout: "layout.njk"
+layout: "default.njk"
 title: Curriculum Overview
 ---
 
@@ -41,5 +41,5 @@ We can break down these targets into objectives for each year.
 
 ### {{curriculum.data.title}}
 
-{{curriculum.templateContent}}
+{{curriculum.templateContent | safe}}
 {%- endfor -%}
