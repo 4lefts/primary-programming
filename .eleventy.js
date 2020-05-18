@@ -18,9 +18,9 @@ module.exports = function (eleventyConfig) {
     .use(markdownItFigures);
   eleventyConfig.setLibrary("md", mdIt);
   eleventyConfig.addPassthroughCopy({ "src/static": "static" });
-  eleventyConfig.addPassthroughCopy("**/*.jpg");
-  eleventyConfig.addPassthroughCopy("**/*.png");
-  eleventyConfig.addPassthroughCopy("**/*.sb3");
+  eleventyConfig.addPassthroughCopy("src/**/*.jpg");
+  eleventyConfig.addPassthroughCopy("src/**/*.png");
+  eleventyConfig.addPassthroughCopy("src/**/*.sb3");
   return {
     markdownTemplateEngine: "njk",
     dir: {

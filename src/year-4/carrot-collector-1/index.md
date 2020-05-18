@@ -13,7 +13,7 @@ In this project, children will make a simple game called Carrot Collector. The r
 
 In this project, children will be introduced to **variables**, which are used to keep track of how many carrots they have collected (their score) and the time remaining, in seconds.
 
-This project assumes a basic level of Scratch knowledges, such as how to create sprites and add code to them, how to create backgrounds, and how to load, save, and (if using Scratch accounts) remix projects shared via a studio. If children are saving work locally to their computers, then there will need to be a way to share a Scratch project with them.
+This project assumes a basic level of Scratch knowledge, such as how to create sprites and add code to them, how to create backgrounds, and how to load, save, and (if using Scratch accounts) remix projects shared via a studio. If children are saving work locally to their computers, then there will need to be a way to share a Scratch project with them.
 
 ## 1. Predict
 
@@ -23,7 +23,7 @@ First, the game itself looks like this - can anyone predict how it works or what
 
 ![Code to show the game layout](./resources/carrot-collector-game.png)
 
-Now, look at the code - how does the rabbit move?
+Now, look at the code - how does the rabbit move? Note that children may not be familiar with 180&deg; (although they should know 90&deg; and the concept of a right angle from Year 2 maths)
 
 ![Code to show how the rabbit moves](./resources/rabbit-movement-code.png)
 
@@ -56,7 +56,7 @@ Now, children can run and play the game. Intially, just allow them to play.
 
 <iframe src="https://scratch.mit.edu/projects/394908164/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
 
-Next, children should **comment** the code. Assuming they have logged in to their scratch accounts, they should create a remix of the project, rename it (as something like "Carrot Collector Commented) and work from this.
+Next, children should **comment** the code. Assuming they have logged in to their scratch accounts, they should create a remix of the project, rename it (as something like "Carrot Collector Commented") and work from this.
 
 Commenting code is a vitally important skill - it lets other programmers know what you were thinking when you made the code, and lets them see why your code is written the way it is. Even more important, it helps your memory. As your programs get bigger and more complicated, you might not remember what each piece of code is doing when you come back to it next week, or even later in the same lesson. So, getting children used to the idea of writing comments on their code is really useful.
 
@@ -120,6 +120,10 @@ increase score by 10
 ```
 
 Once children have planned their work, the only thing left is for them to implement it. If they have followed the steps up until now, it shouldn't be hard for them to create a simple version of their game, to which they can then add things like items which cause a player to lose points.
+
+As noted above, children may not be familiar with 180&deg; (although they should know 90&deg; and the concept of a right angle from Year 2 maths), may need the idea of "-90&deg;" explained. The Scratch interface allows users to choose the direction they want visually by clicking the input for degrees, and children generally find this quite intuitive:
+
+![Degrees UI chooser](./resources/direction-example.png)
 
 ### Creating Variables
 

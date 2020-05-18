@@ -1,0 +1,73 @@
+---
+title: Rocket Trips
+---
+
+# {{title}}
+
+### Downloadable Resources
+
+- Something
+- Coming
+- Soon
+
+In _Rocket Trips_, children create animations of different different sprites (rockets in the example code, but children can use any sprites), which they will get to move around a variety of, hopefully elaborate, paths.
+
+This project allows children to build on their work with **sequencing** instructions in their code, using more advanced **repetition** and **iteration** (i.e. using loops that repeat). Children will only have had a very brief introduction to loops in year 3 (in code that repeats a certain number of times), so most of this will be new to them.
+
+> Computers don't get bored, and are very accurate (as long as they are programmed accurately...). Because of this, loops are used _everywhere_ in computer programs. Humans get fed up if they have to do the same repetitive tasks over and over, but computers don't, and, humans make mistakes with these kinds of tasks. Right now, the code running on the device you're reading this on is looping through the thousands (or millions) of pixels on screen, keeping them updated to the right colours, many times a second.
+
+This project assumes a basic level of Scratch knowledge, such as how to create sprites and add code to them, how to create backgrounds, and how to load, save, and (if using Scratch accounts) remix projects shared via a studio. If children are saving work locally to their computers, then there will need to be a way to share a Scratch project with them.
+
+## 1. Predict
+
+Children should first have an opportunity to read the code, and should be reminded that it can be read like a story, one line at a time, and it should make sense. This is even more important with some of the more advanced parts of this project, which involve multiple nested loops, and therefore require some concentration to read.
+
+There isn't much to see from the background of the project:
+
+![Rocket Trips project background](./resources/rocket-trips-project.png)
+
+However, there is lots to discuss about the code. Give children a copy of the first rocket's code (the white rocket), and allow them time to think about and discuss with partners what they predict it will do.
+
+![Code for how the white rocket is animated](./resources/white-rocket-code.png)
+
+Discuss what this code says:
+
+- What happens when the flag is clicked?
+- What code block is being used to make a loop?
+- How many times does the loop happen?
+- What is happening in the loop?
+
+Very able mathematicians might be able to predict that, because there are 360&deg; in circle, the rocket turns by 10&deg; each time, and the loop repeats 36 times, then it will travel in a circle. However, this is not Year 4 maths, and is likely to confuse children if they don't notice this for themselves. Children might also notice this later in the project when they are running or investigating the code.
+
+Repeat this process for the yellow and green rockets.
+
+![Code for how the yellow rocket is animated](./resources/yellow-rocket-code.png)
+
+Discuss with the children what they think this rocket will do when we run the code (i.e. click it). How will it move? It can be useful to discuss what the code would look like _without_ the loops. What would the white rocket's code look like? There would be 36 `turn` and `move` blocks. The whole stack would be 73 blocks high. How many blocks does the actual code use? Why is this better? What would happen if you tried this without loops? What if you lost count? (In the "investigate" phase, children can have a go at making these without loops.)
+
+![Code for how the green rocket is animated](./resources/green-rocket-code.png)
+
+Discuss the code for the green rocket - draw attention to the fact there is a loop inside a loop. Step through this code and think about what it does. Children should notice:
+
+- it's doing something 4 times
+- on each of those times, it's doing something (moving forward)
+- it turns 90 degrees - children should know what kind of turn this is (and hopefully work out how the rocket will travel)
+
+## 2. Run
+
+Now it's time for children to run the code themselves. We haven't discussed the code for the red, purple or blue rockets, so explain to children that these are a little bit more advanced, but they can still by all means play with these. They might want to make code like this later in the project.
+
+<iframe src="https://scratch.mit.edu/projects/389381414/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
+
+Were their predictions correct? If not, can they see how the rockets' movements are animated?
+
+Next, children should **comment** the code. Assuming they have logged in to their scratch accounts, they should create a remix of the project, rename it (as something like "Rocket Trips Commented") and work from this.
+
+Commenting code is a vitally important skill - it lets other programmers know what you were thinking when you made the code, and lets them see why your code is written the way it is. Even more important, it helps your memory. As your programs get bigger and more complicated, you might not remember what each piece of code is doing when you come back to it next week, or even later in the same lesson. So, getting children used to the idea of writing comments on their cod
+e is really useful.
+
+Children should write comments on the code to explain what each part does, paying particular attention to where the variables are being used. As with any writing, children may need support for this, such as scribes, or working with a partner to record their ideas. For example:
+
+![Example comments on the timer code](./resources/comments-example.png)
+
+> Comments can be added by right clicking. Right clicking on the empty white "canvas", and choose "add comment", this adds a general comment. Right clicking on a specific block and choosing "add comment" add a commet with a red line pointing to that block.
