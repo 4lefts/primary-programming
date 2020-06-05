@@ -1,4 +1,14 @@
-# Programming Scheme Notes – KS2 Scratch
+# Primary Programming
+
+A static site for a scheme of work for primary schools teaching computer programming, using [Scratch](https://scratch.mit.edu).
+
+This site is built with [eleventy](https://11ty.dev).
+To build the site:
+`npx @11ty/eleventy`
+Or, to run a dev server:
+`npx @11ty/eleventy --serve`
+
+## Programming Scheme Notes – KS2 Scratch
 
 _Predict, run, investigate, make_
 
@@ -11,7 +21,7 @@ Thing children need:
 - Navigating the interface
 - Adding scripts to different sprites (and not the stage unless you mean to)
 
-## Y3
+### Y3
 
 - Sequencing events, animation – making things happen after a certain amount of time, in order, e.g:
   - traffic light,
@@ -21,7 +31,7 @@ Thing children need:
   - if touching colour stop?
   - if touching colour hide? If snake hits eggs, eat (hide) them. Add “enemies” (hide character if hit)
 
-## Y4
+### Y4
 
 - Introduction to variables
   - make “collect the xs” game – vars for score/time/lives – extend y3 unit 2.
@@ -32,13 +42,13 @@ Thing children need:
   - make stopwatch – start stop reset, design interface (increment by 0.1 seconds?)
   - animation loops – eg ball bounce up and down, rocket orbit planet (forward and rotate), boat going around an island
 
-## Y5
+### Y5
 
 - Speed, direction, coordinates
 - Random numbers and simulations
   - random maths questions? (implement the y4 times tables screening check?)
 
-## Y6
+### Y6
 
 - More complex variables
 - Object properties?
