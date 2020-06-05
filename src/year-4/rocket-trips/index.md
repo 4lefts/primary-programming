@@ -63,11 +63,81 @@ Were their predictions correct? If not, can they see how the rockets' movements 
 
 Next, children should **comment** the code. Assuming they have logged in to their scratch accounts, they should create a remix of the project, rename it (as something like "Rocket Trips Commented") and work from this.
 
-Commenting code is a vitally important skill - it lets other programmers know what you were thinking when you made the code, and lets them see why your code is written the way it is. Even more important, it helps your memory. As your programs get bigger and more complicated, you might not remember what each piece of code is doing when you come back to it next week, or even later in the same lesson. So, getting children used to the idea of writing comments on their cod
-e is really useful.
+Commenting code is a vitally important skill - it lets other programmers know what you were thinking when you made the code, and lets them see why your code is written the way it is. Even more important, it helps your memory. As your programs get bigger and more complicated, you might not remember what each piece of code is doing when you come back to it next week, or even later in the same lesson. So, getting children used to the idea of writing comments on their code is really useful.
 
 Children should write comments on the code to explain what each part does, paying particular attention to where the variables are being used. As with any writing, children may need support for this, such as scribes, or working with a partner to record their ideas. For example:
 
 ![Example comments on the timer code](./resources/comments-example.png)
 
-> Comments can be added by right clicking. Right clicking on the empty white "canvas", and choose "add comment", this adds a general comment. Right clicking on a specific block and choosing "add comment" add a commet with a red line pointing to that block.
+> Comments can be added by right clicking. Right clicking on the empty white "canvas", and choose "add comment", this adds a general comment. Right clicking on a specific block and choosing "add comment" add a comment with a red line pointing to that block.
+
+## Investigate
+
+Now it's time for children to investigate the code by changing things. As above, they should work from a remix of the project, and as always, should be encouraged to break things. Nothing can really go wrong; the worst that can happen is they have to get another copy of the original project. In this project this is even more the case than normal. The code for each rocket is laden with numbers that can have a huge effect on the animation.
+
+For example, look at the code for the green rocket, which draws a square:
+
+![Code for how the green rocket is animated](./resources/green-rocket-code.png)
+
+Children could explore:
+
+- what happens if the number in the `repeat 4` block is changed?
+- what about the `repeat 10`?
+- what about the number of degrees?
+
+If they compare this to the purple rocket, which draws a triangle, what is the same and what is different? What happens if they change the numbers here? What do they notice is the same and different between the two loops? The outer `repeat` block is 3 for the triangle, and 4 for the square, and controls the number of sides to the shape. The angle that the rocket turns through is 120 degrees for the triangle and 90 for the square. Children in year 4 are unlikely to notice that this angle is 360/number of sides, and therefore any polygon can be drawn this way. But children can be guided to try
+
+```
+repeat 6
+  repeat 5
+    move 10 steps
+  turn 60 degrees
+```
+
+Or
+
+```
+repeat 5
+  repeat 6
+    move 10
+  turn 72 degrees
+```
+
+Class discussion can follow a similar path for the red rocket, and how curved paths are created.
+
+It's worth mentioning that children will only get so far replacing numbers randomly. They will need guidance and discussion to understand the impact their changes are having on the animations.
+
+## Make
+
+Finally, it's time for children to make their own animations. This will likely take a few lessons, and involve some trial and error, so children should be signed into their Scratch accounts and have named and saved their project before they start work.
+
+There is no reason children's animations should involve rockets. They could create animal animations around a habitat, boats on a river, people around a town, or anything that fits with the class' current topic.
+
+Before coding anything, children should plan their work on paper.
+
+- What will it look like?
+- What vehicles/characters will be animated?
+- What paths will they take?
+- How will these paths use repitition? (Remember that this is our objective)
+
+Children should focus on ONE animated path at a time - trying to create too many will result in none of them being finished to a high standard. It's far better to have one animated path working well that have six sprites that are all broken.
+
+Childern should write notes in "psuedo-code" to show roughly how their algorithm for their desired path will work. For example, to draw a triangle right then left:
+
+```
+repeat 3
+  repeat 5
+    move 10 steps
+  turn 120 degrees
+turn 60
+repeat 3
+  repeat 5
+    move 10 steps
+  turn 120 degrees
+```
+
+This specific block of pseudo code is not perfect and probably won't work exactly right, but that's not important, as numbers can be tweaked as we're testing our code. What **is** important is that children have thought about the overall structure of what they're trying to achieve before they start putting blocks together.
+
+As always, allow ample time for children to iterate on their code, to share it with their peers, to evaluate each others' work and improve their own animations.
+
+> **A note on curved motion** - describing curved motion can be tricky. There is a certain amount that can be done with the `rotate _ degrees` and `move _ steps` blocks, as shown in the original project. But this technique only goes so far, and move complex motion eventually needs trigonometry. Depending what children what to create, it's probably worth guiding them towards straight line motion, as this is often a lot simpler.
