@@ -1,5 +1,5 @@
 ---
-title: Carrot Collector - Part 1
+title: Carrot Collector
 ---
 
 # {{title}}
@@ -11,7 +11,7 @@ title: Carrot Collector - Part 1
 
 In this project, children will make a simple game called Carrot Collector. The rabbit needs to collect as many carrots as possible before the time runs out. They get one point for each carrot - who can get the highest score?
 
-In this project, children will be introduced to **variables**, which are used to keep track of how many carrots they have collected (their score) and the time remaining, in seconds.
+In this project, children will be introduced to **variables**, which are used to keep track of how many carrots they have collected (their score) and the time remaining, in seconds. They will also begin to use variables with **selection** (i.e. ending the program when the timer variable is less than 1).
 
 This project assumes a basic level of Scratch knowledge, such as how to create sprites and add code to them, how to create backgrounds, and how to load, save, and (if using Scratch accounts) remix projects shared via a studio. If children are saving work locally to their computers, then there will need to be a way to share a Scratch project with them.
 
@@ -21,7 +21,7 @@ First, children should have the opportunity to read the code. Remind children th
 
 First, the game itself looks like this - can anyone predict how it works or what the idea is?
 
-![Code to show the game layout](./resources/carrot-collector-game.png)
+![Screenshot to show the game layout](./resources/carrot-collector-game.png)
 
 Now, look at the code - how does the rabbit move? Note that children may not be familiar with 180&deg; (although they should know 90&deg; and the concept of a right angle from Year 2 maths)
 
@@ -39,7 +39,7 @@ Discuss with the children, or in partners/groups, what they think will happen wh
 
 This may well be the first time children have worked with variables, and this will require a lot of discussion and reinforcement in this (and subsequent) projects, but it is _vital_ that they understand where variables are being used in this program, how they are used, and why.
 
-> Variables are used by programmers to store useful information, called **data** that their program needs to rememeber, such as the score in a game. Without them, the program cannot remember anything. Variables are like boxes that store information. As a programmer, you can make your own variables, store things in them, like words or numbers, then later look up what is stored there, and change it if you need to. Programmers give their variables useful names, such as "score" for a variable that stores the score in a game, or "lives" for a variable that keeps track of a player's remaining lives.
+> Variables are used by programmers to store useful information, called **data**, that their program needs to remember, such as the score in a game. Without them, the program cannot remember anything. Variables are like boxes that store information. As a programmer, you can make your own variables, store things in them, like words or numbers, then later look up what is stored there, and change it if you need to. Programmers give their variables useful names, such as "score" for a variable that stores the score in a game, or "lives" for a variable that keeps track of a player's remaining lives.
 
 The first variable they can see in this project is in the carrot code: a block of code there says `if touching rabbit, go to random position, change score by 1`. Some key questions for children:
 

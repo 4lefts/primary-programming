@@ -1,7 +1,7 @@
 {% extends "layout.njk" %}
 {% block content %}
   {{content | safe}}
-  <h3>Other Projects for {{tags}}</h3>
+  <h3>Projects for {{tags}}</h3>
   <ol>
   {% for project in collections[tags] -%}
   <li {% if project.url == page.url %} class="current-project" {% endif %}>
