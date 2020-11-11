@@ -11,9 +11,11 @@ title: Parachute Drop
 
 In this project, children will make a game called Parachute Drop. The skydiver needs to get to the ground without hitting any of the clouds.
 
-Children will review prior work on **variables**, and begin to explore how physical systems can be modelled in code. The variables are use here to model forces such as the air resistance and gravity, which act on the clouds and the skydiver. This project fits best with **work in science on forces**, and a science investigation into parachutes.
+Children will review prior work on **variables**, and begin to explore how physical systems can be modelled in code. The variables are use here to model forces such as the air resistance and gravity, which act on the clouds and the skydiver. This project fits well with **work in science on forces**, and a science investigation into parachutes.
 
 They will continue to use **selection** and will explore other ways that it is used, for example with **inputs** (i.e. `if key a is pressed then`), and begin to use it with **iteration** to position the clouds at the start of the game.
+
+They will also look at x and y coordinates, although this work will be consolidated in other projects.
 
 This project assumes a level of Scratch knowledge that builds on the knowledge covered in the Year 4 project, including how to create sprites and add code to them, how to create backgrounds, and how to load, save, and (if using Scratch accounts) remix projects shared via a studio. If children are saving work locally to their computers, then there will need to be a way to share a Scratch project with them.
 
@@ -48,3 +50,32 @@ The final piece of code for the skydiver is simple, but children should discuss 
 ![Code to show the setup of the cloud sprite](./resources/cloud-setup-code.png)
 ![Code to show the start of the cloud sprite](./resources/cloud-start-code.png)
 ![Code to show the movement of the cloud sprite](./resources/cloud-move-code.png)
+
+## Run
+
+Now, children can run the game and have a go. In the first instance, just allow them to play.
+
+<iframe src="https://scratch.mit.edu/projects/444784774/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
+
+Next, children should **comment** the code. Assuming they have logged in to their scratch accounts, they should create a remix of the project, rename it (as something like "Parachute Drop Commented") and work from this.
+
+Children should have some understanding of how to comment their code, and why this is important, Year 4 (i.e. it lets other programmers know what you were thinking when you made the code, and lets them see why your code is written the way it is. Even more important, it helps your memory. As programs get bigger and more complicated, you might not remember what each piece of code is doing when you come back to it next week, or even later in the same lesson).
+
+There are already some comments on the code to show children which bit of the code are less important to the core functionality of the game - draw their attention to these parts,for example the code for stopping the skydiver rotating upside down. This will be an important teaching point later, but the game works without these `if` blocks, and children shouldn't get too hung up on what is happening here.
+
+Children should write comments on the code to explain what each part does, paying particular attention to:
+
+- What variables are being used? Where? What do they do in the code? What are they modelling?
+- Where is selection being used (i.e. what `if` blocks are there)? What are these blocks doing?
+
+## Investigate
+
+Next, children should explore the code by changing it, again working from a "remix" of the project.
+
+Initially, they can explore making changes to numbers, running the code, and seeing what happens. They should be taught to make a mental note of what a number was before they changed it, so that they can change it back. Then guide them to explore
+
+- What happens when the `gravity` and `air` resistance are changed?
+- What happens if we change the `wind` variable?
+- Can they make clouds appear smaller of larger?
+- What happens if we change the x and y coordinates of the where the clouds appear?
+- Can children use their work from Year 4 to introduce "lives" to the game? Or a score for getting to the ground quicker?

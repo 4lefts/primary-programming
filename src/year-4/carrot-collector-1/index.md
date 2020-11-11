@@ -68,7 +68,7 @@ Children should write comments on the code to explain what each part does, payin
 
 ## 3. Investigate
 
-Now it's time for children to explore the code, by changing it. Again, they should work from a a "remix" of the original code, and they should focus on the use of variables.
+Now it's time for children to explore the code, by changing it. Again, they should work from a "remix" of the original code, and they should focus on the use of variables.
 
 First, they can explore changing whatever numbers they like, running the code, and seeing what happens. Then, they should be a little more "focused" in the changes they make. For example:
 

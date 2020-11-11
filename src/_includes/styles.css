@@ -115,6 +115,10 @@ a:hover {
   color: var(--highlight-color);
 }
 
+p > img {
+  max-width: 100%;
+}
+
 p code {
   background-color: gainsboro;
   padding-left: 2px;
