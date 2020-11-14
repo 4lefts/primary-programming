@@ -1,19 +1,10 @@
 ---
 title: Parachute Drop
-resources: "./resources/resources.zip"
-length: "4 - 5 sessions"
 ---
 
-<header>
-<div class="headings">
-<h1>{{title}}</h1>
-<h4>{{length}}</h4>
-</div>
-<a class="resources-dl" href={{resources}} download>
-Download Project Resources
-<span> - images and Scratch .sb3 file (.zip)</span>
-</a>
-</header>
+{% projectheader "4 - 5 Sessions",  "./resources/resources.zip" %}
+{{title}}
+{% endprojectheader %}
 
 In this project, children will make a game called Parachute Drop. The skydiver needs to get to the ground without hitting any of the clouds.
 
@@ -26,8 +17,6 @@ They will also look at x and y coordinates, although this work will be consolida
 This project assumes a level of Scratch knowledge that builds on the knowledge covered in the Year 4 project, including how to create sprites and add code to them, how to create backgrounds, and how to load, save, and (if using Scratch accounts) remix projects shared via a studio. If children are saving work locally to their computers, then there will need to be a way to share a Scratch project with them.
 
 ### Suggested Session Breakdown
-
-#### 4 - 5 sessions
 
 The outline below is a very rough guide, and depends on learners being comfortable with logging in to Scratch, creating, saving programs, and using a class studio to find, remix and share projects.
 

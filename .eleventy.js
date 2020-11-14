@@ -22,12 +22,18 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/**/*.png");
   eleventyConfig.addPassthroughCopy("src/**/*.sb3");
   eleventyConfig.addPassthroughCopy("src/**/*.zip");
-  eleventyConfig.addNunjucksShortcode("resourcesdownload", function(pathToZip){
+  eleventyConfig.addPairedShortcode("projectheader", function(title, duration, resourcesLink){
     return `
-<a class="resources-dl" href="${pathToZip}" download>
+<header>
+<div class="headings">
+<h1>${title}</h1>
+<h4>${duration}</h4>
+</div>
+<a class="resources-dl" href=${resourcesLink} download>
 Download Project Resources
 <span> - images and Scratch .sb3 file (.zip)</span>
 </a>
+</header>
 `;
   })
   return {
