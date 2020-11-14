@@ -4,10 +4,7 @@ title: Parachute Drop
 
 # {{title}}
 
-### Downloadable Resources
-
-- [Parachute Scratch Project](#)
-- [Code sheets for Children](#)
+{% resourcesdownload "./resources/resources.zip" %}
 
 In this project, children will make a game called Parachute Drop. The skydiver needs to get to the ground without hitting any of the clouds.
 
@@ -27,7 +24,7 @@ The outline below is a very rough guide, and depends on learners being comfortab
 
 | Session | Suggested Outline                                                                                                                                                                                  |
 | ------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 1       | Showing the code and [predicting](#predict) what it does; [running](#run) the game; beginning paired work on commenting the code                                                                   |
+| 1       | Showing the code and [predicting](#predict) what it does; [running](#run) the game; beginning paired work on commenting the code - predicting and running will need to run work in tandem          |
 | 2       | Reviewing comments made last time; finishing commenting of code; guided/shared [investigation](#investigate) of code                                                                               |
 | 3       | Beginning the [make](#make) stage; creating small steps of the code (e.g. making a sprite fall under gravity/air resistance, making a sprite turn, creating, moving and deleting clones in a loop) |
 | 4       | Continuing the [make](#make) stage; designing original games on paper using the skills above; annotating with psuedo-code for key points                                                           |
@@ -39,31 +36,43 @@ First, children should have the opportunity to read the code. Remind children th
 
 First, the game itself looks like this - can anyone predict how it works or what the idea is?
 
-![Screenshot to show the game layout](./resources/parachute-game.png)
+![Screenshot to show the game layout](./resources/1-parachute-game.png)
 
 Now, read and discuss the first part of the code.
 
-![Code to show the setup for the skydiver](./resources/skydiver-setup-code.png)
+![Code to show the setup for the skydiver](./resources/2-skydiver-setup-code.png)
 
 This is the setup for the skydiver. What variables are set here? Look at the use of a `broadcast` block. Why is this here? (It broadcasts a message called "start" once the initial setup of the variables is completed. This message can the be received by the various sprites in the game. This is a common pattern that is used to ensure things like gravity, timers, lives, positions, etc are definitely set before sprites start to use them.)
+
+Children should easily understand what the purple `say 3... (etc) for 1 seconds` blocks are doing, but may need to be guided to understand that they are there to allow the clouds time to fill the screen, otherwise the game is too easy. They will probably need to run the game to grasp this.
 
 > Children may not have seen the combination of blocks `broadcast` and `when I recieve` before, and this pattern may need to be taught. These two blocks are used to send messages between sprites, for example, if the clouds here touch the skydiver, they broadcast a message which is received by the skydiver and returns him to his start position. Without this, the skydiver's code would have to check every single cloud one by one to see if he had hit them.
 
 Next we have the code for controlling the skydiver. This should be more familiar to the children as it consists of nested `forever` and `if` blocks. Again, children should read and discuss this code, and speculate on what it does. Children should be comfortable with the way the key inputs are working to rotate the skydiver.
 
-![Code to show the controls for the skydiver](./resources/skydiver-control-code.png)
+![Code to show the controls for the skydiver](./resources/3-skydiver-control-code.png)
 
 They should note the use of the `when I receive "start"` block at the top; this code will start running once everything is set up. Also, they should realise that the if block is checking to see if they are _not_ touching the ground (the green colour), and then moving the skydiver in this case (i.e. if the skydiver _is_ touching the ground, then he will stop moving and say "I am the champion!").
 
 A subtle part of this code is the blue `move 1 steps` block. This is moving the skydiver in the direction the sprite is facing. Note the the sprite's costume is drawn rotated through 90&deg; and the setup code points the sprite in the direction 180&deg;. This is what allows the skydiver to fall with a combination of gravity and the direction he is pointing. Then, when a key is pressed to turn the sprite, an `if` block also checks whether the sprite is rotated outside of the range -90&deg; to +90&deg;, as the skydiver shouldn't be able to go up! This part is a bit tricky to understand, and it would be fine for children to just copy the blocks `if direction > -90 and direction < 0` and `if direction <90 and direction > 0`.
 
-![Code to show what happens when the skydiver is hit](./resources/skydiver-hit-code.png)
+![Code to show what happens when the skydiver is hit](./resources/4-skydiver-hit-code.png)
 
 The final piece of code for the skydiver is simple, but children should discuss where the the "hit" message might be coming from. They should also notice that the original location of the skydiver was stored in the variables "start x" and "start y" in the set up code, so that he can be returned to the same start location if he hits a cloud.
 
-![Code to show the setup of the cloud sprite](./resources/cloud-setup-code.png)
-![Code to show the start of the cloud sprite](./resources/cloud-start-code.png)
-![Code to show the movement of the cloud sprite](./resources/cloud-move-code.png)
+Next, there is the code for the clouds.
+
+![Code to show the setup of the cloud sprite](./resources/5-cloud-setup-code.png)
+
+First, the cloud sprite is hidden when the flag is clicked, then when the game starts, the sprite runs a `forever` loop that creates clones of the cloud every second.
+
+> Children may not have seen the blocks for cloning a sprite, but these are very useful for creating lots of independent copies of a sprite, rather than having to make them all by hand. This is the beginning of _object oriented programming_, and is an important concept, but one that is not taught explicitly in KS2. However, children will be able to understand what is happening here, and why it is useful. We need an arbitrarily large number of cloud sprites, each moving across the screen, with their own random y co-ordinate, and their own x-coordinate that is updated based on the wind. These cloned sprites are controlled by the blocks below, under `went I start as a clone`.
+
+![Code to show the movement of the cloud sprites](./resources/6-cloud-control-code.png)
+
+Here, the code moves each newly created clone to a random y position, at x=300 (i.e off the right-hand edge of the screen). Then, in the `repeat` loop, each clone is moved across by updating its x position according to the `wind` variable, until the x position is less than -240 (i.e. the cloud is off the left edge). Note that some learners will need to be reminded or taught that, if `wind` is negative, then this is the same as subtracting from the x position.
+
+The code also checks whether the cloud is touching the skydiver, and broadcasts the event `hit` if so. Finally, once the `repeat` loop finishes, the clone is deleted, otherwise all the old clouds will pile up on the left-hand edge of the stage.
 
 ## Run
 
