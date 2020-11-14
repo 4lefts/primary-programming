@@ -163,3 +163,24 @@ th {
   border: 1px solid var(--font-color);
   padding: 5px;
 }
+
+.resources-dl {
+  text-align: right;
+  padding: 10px var(--gutter);
+  text-decoration: none;
+  color: var(--accent-color);
+  font-weight: 700;
+  background-color: white;
+  border: 1px solid var(--accent-color);
+  transition: all 0.3s ease;
+}
+
+.resources-dl span {
+  font-size: 0.9em;
+  font-weight: 400;
+}
+
+.resources-dl:hover {
+  color: white;
+  background-color: var(--accent-color);
+}
