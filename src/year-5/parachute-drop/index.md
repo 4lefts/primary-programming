@@ -1,10 +1,19 @@
 ---
 title: Parachute Drop
+resources: "./resources/resources.zip"
+length: "4 - 5 sessions"
 ---
 
-# {{title}}
-
-{% resourcesdownload "./resources/resources.zip" %}
+<header>
+<div class="headings">
+<h1>{{title}}</h1>
+<h4>{{length}}</h4>
+</div>
+<a class="resources-dl" href={{resources}} download>
+Download Project Resources
+<span> - images and Scratch .sb3 file (.zip)</span>
+</a>
+</header>
 
 In this project, children will make a game called Parachute Drop. The skydiver needs to get to the ground without hitting any of the clouds.
 
