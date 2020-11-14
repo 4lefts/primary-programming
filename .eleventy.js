@@ -21,6 +21,12 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/**/*.jpg");
   eleventyConfig.addPassthroughCopy("src/**/*.png");
   eleventyConfig.addPassthroughCopy("src/**/*.sb3");
+  eleventyConfig.addPassthroughCopy("src/**/*.zip");
+  eleventyConfig.addNunjucksShortcode("resourcesdownload", function(pathToZip){
+    return `
+<a href="${pathToZip}" download>Resources DL!</a>
+`;
+  })
   return {
     markdownTemplateEngine: "njk",
     dir: {
