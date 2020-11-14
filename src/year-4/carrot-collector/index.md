@@ -21,19 +21,19 @@ First, children should have the opportunity to read the code. Remind children th
 
 First, the game itself looks like this - can anyone predict how it works or what the idea is?
 
-![Screenshot to show the game layout](./resources/carrot-collector-game.png)
+![Screenshot to show the game layout](./resources/1-carrot-collector-game.png)
 
 Now, look at the code - how does the rabbit move? Note that children may not be familiar with 180&deg; (although they should know 90&deg; and the concept of a right angle from Year 2 maths)
 
-![Code to show how the rabbit moves](./resources/rabbit-movement-code.png)
+![Code to show how the rabbit moves](./resources/2-rabbit-movement-code.png)
 
 Next, look at the carrots. What is their code doing? Draw particular attention to the nested block of `forever` and `if`. This is a loop that keeps running continuously to see **if** the rabbit is touching the carrot. Forgetting to put the `forever` around the outside of the `if` is common error in this type of code; without the `forever`, the code will just run **once**, at the start of the game (when the flag is clicked), and never again.
 
-![Code to show how the carrots work](./resources/carrot-code.png)
+![Code to show how the carrots work](./resources/3-carrot-code.png)
 
 And finally, have a look at the timer code.
 
-![Code to show how the timer works](./resources/timer-code.png)
+![Code to show how the timer works](./resources/4-timer-code.png)
 
 Discuss with the children, or in partners/groups, what they think will happen when we run the code (i.e. click the green flag).
 
@@ -62,7 +62,7 @@ Commenting code is a vitally important skill - it lets other programmers know wh
 
 Children should write comments on the code to explain what each part does, paying particular attention to where the variables are being used. As with any writing, children may need support for this, such as scribes, or working with a partner to record their ideas. For example:
 
-![Example comments on the timer code](./resources/comments-example.png)
+![Example comments on the timer code](./resources/5-comments-example.png)
 
 > Comments can be added by right clicking. Right clicking on the empty white "canvas", and choose "add comment", this adds a general comment. Right clicking on a specific block and choosing "add comment" add a commet with a red line pointing to that block.
 
@@ -123,11 +123,15 @@ Once children have planned their work, the only thing left is for them to implem
 
 As noted above, children may not be familiar with 180&deg; (although they should know 90&deg; and the concept of a right angle from Year 2 maths), may need the idea of "-90&deg;" explained. The Scratch interface allows users to choose the direction they want visually by clicking the input for degrees, and children generally find this quite intuitive:
 
-![Degrees UI chooser](./resources/direction-example.png)
+![Degrees UI chooser](./resources/6-direction-example.png)
 
 ### Creating Variables
 
-There are some parts that may catch children out. As variables are new, they will need to be taught how to make make them - the blocks for this are **dark orange**, and new variables can be made using the "make a variable" button. The window that pops up will ask them to give their new variable a name, which can be anything, but should be meaningful (i.e. "score", not "my nice variable"). There is also a choice between "for all sprites" or "for this sprite only". For this project, children should only need "for all sprites", which allows all sprites in the project to access the variable. If children are having problems later in their code because they don't have the variables they need, even though they created them, then it might be because they chose "for this sprite only", which means other sprites cannot access the variable.
+There are some parts that may catch children out. As variables are new, they will need to be taught how to make make them - the blocks for this are **dark orange**, and new variables can be made using the "make a variable" button. The window that pops up will ask them to give their new variable a name, which can be anything, but should be meaningful (i.e. "score", not "my nice variable"). There is also a choice between "for all sprites" or "for this sprite only".
+
+![screen showing local and global variables](./resources/7-make-new-variable-screen.png)
+
+For this project, children should only need "for all sprites", which allows all sprites in the project to access the variable. If children are having problems later in their code because they don't have the variables they need, even though they created them, then it might be because they chose "for this sprite only", which means other sprites cannot access the variable.
 
 > The difference between **local** and **global** variables will become more important as children progress. Local variables are those that are only accessible to "this sprite only", whereas "global" variables are accessible to all sprites. For example, imagine a game with two players. Both might have the same code, and a variable called "score", but these would need to be kept separate, and therefore would be created "for this sprite only", so that updating one player's score doesn't update the other. In this project, variables need to be "for all sprites" so that, for example, **all** the carrots can update the player's score.
 
