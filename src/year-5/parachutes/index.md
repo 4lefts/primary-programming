@@ -19,7 +19,21 @@ They will also look at x and y coordinates, although this work will be consolida
 
 This project assumes a level of Scratch knowledge that builds on the knowledge covered in the Year 4 project, including how to create sprites and add code to them, how to create backgrounds, and how to load, save, and (if using Scratch accounts) remix projects shared via a studio. If children are saving work locally to their computers, then there will need to be a way to share a Scratch project with them.
 
-## 1. Predict
+### Suggested Session Breakdown
+
+#### 4 - 5 sessions
+
+The outline below is a very rough guide, and depends on learners being comfortable with logging in to Scratch, creating, saving programs, and using a class studio to find, remix and share projects.
+
+| Session | Suggested Outline                                                                                                                                                                                  |
+| ------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1       | Showing the code and [predicting](#predict) what it does; [running](#run) the game; beginning paired work on commenting the code                                                                   |
+| 2       | Reviewing comments made last time; finishing commenting of code; guided/shared [investigation](#investigate) of code                                                                               |
+| 3       | Beginning the [make](#make) stage; creating small steps of the code (e.g. making a sprite fall under gravity/air resistance, making a sprite turn, creating, moving and deleting clones in a loop) |
+| 4       | Continuing the [make](#make) stage; designing original games on paper using the skills above; annotating with psuedo-code for key points                                                           |
+| 5 - 6   | [Making](#make) and testing games; sharing to class studio; giving peer feedback; iterating on this process                                                                                        |
+
+## Predict
 
 First, children should have the opportunity to read the code. Remind children that code can be read as a story, they can step through it logically, one block at a time, and read it out loud. If they do this, it will almost always make sense.
 
@@ -79,3 +93,33 @@ Initially, they can explore making changes to numbers, running the code, and see
 - Can they make clouds appear smaller of larger?
 - What happens if we change the x and y coordinates of the where the clouds appear?
 - Can children use their work from Year 4 to introduce "lives" to the game? Or a score for getting to the ground quicker?
+
+## Make
+
+As this is a fairly complex project for children in Year 5, it will be necessary to guide some small, key steps towards making their own games based on this project. Children will ultimately design their own games, but first, they will probably need to spend a session or so making the following discrete steps:
+
+### The Skydiver
+
+- Randomising a sprite's start position along the x-axis, and storing this in a variable
+- Making a sprite based on gravity and air resistance, and storing these in variables, so that they can be changed (children could also create multiple sprites, for example a ball and a feather, that share a `gravity` variable, created with "for all sprites", but fall at different rates by having their own `air resistance` variables, created with "for this sprite only")
+- Stopping a sprite when it hits the ground (i.e. making the sprite fall `if not touching the ground colour`)
+- Turning a sprite using key presses in a forever loop. This step can be combined with the above, and children can see the need for an extra `move 1 steps` block.
+
+### The Clouds
+
+- Creating a sprite and hiding it and creating clones of it every 2 seconds
+- Moving these clones to the far right of the screen, showing them and moving them across the screen by changing their `x position` by a `wind` variable
+- Deleting them when they reach the other side
+- Finally, creating a `hit` event that is `received` by the skydiver and send them back to `startx` and `starty`
+
+Once the class are more comfortable with these small steps, and have made example code that they can refer to, then they can begin to design their own versions of the game, for example, guiding a flying squirrel to the ground without hitting the leaves, or landing a spaceship (children will need to create a planet that has an atmosphere - they can't have a variable called "air resistance" on the moon!).
+
+These plans should be done on paper first, and children should annotate their work with "psuedo-code" (i.e. simple drawings of "Scratch-like" blocks that show roughly how things will be implemented). More able learners should also annotate where they will improve and extend the game, for example:
+
+- Using timers, scores and lives (from Year 4 projects)
+- Having a variety of "hazard" sprites (e.g. clouds, birds, etc) which push the player some steps, or send them back to the start
+- Creating a two player version, where there are two "skydiver" sprites, which are controlled by two people, for example using "a" and "s" keys and "k" and "l" keys.
+
+Once designing is complete, children should be giving ample time to create their games. They should be reminded not to spend all their time drawing sprites and backgrounds, but to work methodically on implementing the code in something like the order we practised together above. They should save their work often, and should test their work regularly and thoroughly. It's s a good idea to model this last point: children will often try to code and entire project in one go, press the green flag, and then be confused when it doesn't work. They should get into the habit of testing their work every few blocks.
+
+As always, children should use the orange "share" button to share their work, adding a description and putting it in the class studio. They should be given time to play each others' games, give feedback, and respond to this. The more time that they can spend on this, the better their work will be.
