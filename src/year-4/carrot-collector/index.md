@@ -2,12 +2,9 @@
 title: Carrot Collector
 ---
 
-# {{title}}
-
-### Downloadable Resources
-
-- [Carrot Collector Scratch Project](./resources/carrot-collector.sb3)
-- [Code sheets for Children](#)
+{% projectheader "4 - 5 Sessions",  "./resources/resources.zip" %}
+{{title}}
+{% endprojectheader %}
 
 In this project, children will make a simple game called Carrot Collector. The rabbit needs to collect as many carrots as possible before the time runs out. They get one point for each carrot - who can get the highest score?
 
@@ -15,7 +12,18 @@ In this project, children will be introduced to **variables**, which are used to
 
 This project assumes a basic level of Scratch knowledge, such as how to create sprites and add code to them, how to create backgrounds, and how to load, save, and (if using Scratch accounts) remix projects shared via a studio. If children are saving work locally to their computers, then there will need to be a way to share a Scratch project with them.
 
-## 1. Predict
+### Suggested Session Breakdown
+
+The outline below is a very rough guide, and depends on learners being comfortable with logging in to Scratch, creating, saving programs, and using a class studio to find, remix and share projects.
+
+| Session | Suggested Outline                                                                                                                                                                                  |
+| ------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1       | Reading the code, making [predictions](#predict); learning/revising how to log in to Scratch, how to remix projects; [playing](#run) the game; discussing how it works, and what could be improved |
+| 2       | Replaying the game; creating a remix, discussing commenting; making comments on code; [investigating](#investigate) how the code can be changed; making notes about changes                        |
+| 3       | Beginning [making](#make); teach steps necessary to make the game (e.g. making varibles); designing games on paper.                                                                                |
+| 4 -5    | Making the games as designed; submitting to class studio; playing and testing each others' games; responding to feedback                                                                           |
+
+## Predict
 
 First, children should have the opportunity to read the code. Remind children that code can be read as a story, they can step through it logically, one block at a time, and read it out loud. If they do this, it will almost always make sense.
 
@@ -50,7 +58,7 @@ The first variable they can see in this project is in the carrot code: a block o
 
 Discuss other places variables might be used in programs. Can anyone see another one here? (There's one called `time`.) Other variables might be used in games for things like what level you are on, or how much money you have in a game. When you log in to a website, they are used to store things like your username, who you are friends with, your messages, and many, many more things. They are **everywhere**.
 
-## 2. Run
+## Run
 
 Now, children can run and play the game. Intially, just allow them to play.
 
@@ -66,7 +74,7 @@ Children should write comments on the code to explain what each part does, payin
 
 > Comments can be added by right clicking. Right clicking on the empty white "canvas", and choose "add comment", this adds a general comment. Right clicking on a specific block and choosing "add comment" add a commet with a red line pointing to that block.
 
-## 3. Investigate
+## Investigate
 
 Now it's time for children to explore the code, by changing it. Again, they should work from a "remix" of the original code, and they should focus on the use of variables.
 
@@ -80,7 +88,7 @@ First, they can explore changing whatever numbers they like, running the code, a
   - How will the player know that some carrots are different? Could they be a different colour? A different size? Should carrots that are worth more points be larger or smaller?
 - Can children make some carrots "poisonous" - i.e. if you collect them, then you _lose_ points? Think about the above points for this change.
 
-## 4. Make
+## Make
 
 For the final part of this project, children should make their own version of Carrot Collector. The exact topic of children's games will vary. These could be open, or could be linked to class topic work. For example:
 
