@@ -164,8 +164,24 @@ th {
   padding: 5px;
 }
 
+header {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  margin-bottom: 2em;
+}
+
+header h1 {
+  margin-bottom: 0.3em;
+}
+
+header h4 {
+  margin: 0;
+  text-transform: uppercase;
+  color: grey;
+}
+
 .resources-dl {
-  text-align: right;
+  flex-grow: 2;
   padding: 10px var(--gutter);
   text-decoration: none;
   color: var(--accent-color);
