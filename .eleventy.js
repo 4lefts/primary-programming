@@ -26,8 +26,9 @@ module.exports = function (eleventyConfig) {
     return `
 <header>
 <div class="headings">
+<h3>${year}</h3>
 <h1>${title}</h1>
-<h4>${year}, ${duration}</h4>
+<h4>${duration}</h4>
 </div>
 <a class="resources-dl" href=${resourcesLink} download>
 Download Project Resources

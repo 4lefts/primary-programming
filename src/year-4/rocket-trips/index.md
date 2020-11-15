@@ -2,13 +2,9 @@
 title: Rocket Trips
 ---
 
-# {{title}}
-
-### Downloadable Resources
-
-- Something
-- Coming
-- Soon
+{% projectheader "Year 4", "4 Sessions",  "./resources/resources.zip" %}
+{{title}}
+{% endprojectheader %}
 
 In _Rocket Trips_, children create animations of different different sprites (rockets in the example code, but children can use any sprites), which they will get to move around a variety of, hopefully elaborate, paths.
 
@@ -18,17 +14,28 @@ This project allows children to build on their work with **sequencing** instruct
 
 This project assumes a basic level of Scratch knowledge, such as how to create sprites and add code to them, how to create backgrounds, and how to load, save, and (if using Scratch accounts) remix projects shared via a studio. If children are saving work locally to their computers, then there will need to be a way to share a Scratch project with them.
 
-## 1. Predict
+### Suggested Session Breakdown
+
+The outline below is a very rough guide, and depends on learners being comfortable with logging in to Scratch, creating, saving programs, and using a class studio to find, remix and share projects.
+
+| Session | Suggested Outline                                                                                                                                                                                                       |
+| ------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1       | Showing the code for white, yellow and green rockets, and [predicting](#predict) what they do; [running](#run) the project; paired work on commenting the code - predicting and running will need to run work in tandem |
+| 2       | [Investigation](#investigate) session - children explore changing values the code for themselves                                                                                                                        |
+| 3       | Beginning to [make](#make) our own animations; designing and pseudo-coding on paper; shared coding inputs/plenaries one using `repeat` to animate paths                                                                 |
+| 4       | Continued [making](#make); adding animations to class studios; sharing and peer-reviewing work; making improvements                                                                                                     |
+
+## Predict
 
 Children should first have an opportunity to read the code, and should be reminded that it can be read like a story, one line at a time, and it should make sense. This is even more important with some of the more advanced parts of this project, which involve multiple nested loops, and therefore require some concentration to read.
 
 There isn't much to see from the background of the project:
 
-![Rocket Trips project background](./resources/rocket-trips-project.png)
+![Rocket Trips project background](./resources/1-rocket-trips-project.png)
 
 However, there is lots to discuss about the code. Give children a copy of the first rocket's code (the white rocket), and allow them time to think about and discuss with partners what they predict it will do.
 
-![Code for how the white rocket is animated](./resources/white-rocket-code.png)
+![Code for how the white rocket is animated](./resources/2-white-rocket-code.png)
 
 Discuss what this code says:
 
@@ -41,11 +48,11 @@ Very able mathematicians might be able to predict that, because there are 360&de
 
 Repeat this process for the yellow and green rockets.
 
-![Code for how the yellow rocket is animated](./resources/yellow-rocket-code.png)
+![Code for how the yellow rocket is animated](./resources/3-yellow-rocket-code.png)
 
 Discuss with the children what they think this rocket will do when we run the code (i.e. click it). How will it move? It can be useful to discuss what the code would look like _without_ the loops. What would the white rocket's code look like? There would be 36 `turn` and `move` blocks. The whole stack would be 73 blocks high. How many blocks does the actual code use? Why is this better? What would happen if you tried this without loops? What if you lost count? (In the "investigate" phase, children can have a go at making these without loops.)
 
-![Code for how the green rocket is animated](./resources/green-rocket-code.png)
+![Code for how the green rocket is animated](./resources/4-green-rocket-code.png)
 
 Discuss the code for the green rocket - draw attention to the fact there is a loop inside a loop. Step through this code and think about what it does. Children should notice:
 
@@ -53,7 +60,7 @@ Discuss the code for the green rocket - draw attention to the fact there is a lo
 - on each of those times, it's doing something (moving forward)
 - it turns 90 degrees - children should know what kind of turn this is (and hopefully work out how the rocket will travel)
 
-## 2. Run
+## Run
 
 Now it's time for children to run the code themselves. We haven't discussed the code for the red, purple or blue rockets, so explain to children that these are a little bit more advanced, but they can still by all means play with these. They might want to make code like this later in the project.
 
@@ -67,7 +74,7 @@ Commenting code is a vitally important skill - it lets other programmers know wh
 
 Children should write comments on the code to explain what each part does, paying particular attention to where the variables are being used. As with any writing, children may need support for this, such as scribes, or working with a partner to record their ideas. For example:
 
-![Example comments on the timer code](./resources/comments-example.png)
+![Example comments on the timer code](./resources/5-comments-example.png)
 
 > Comments can be added by right clicking. Right clicking on the empty white "canvas", and choose "add comment", this adds a general comment. Right clicking on a specific block and choosing "add comment" add a comment with a red line pointing to that block.
 
@@ -77,7 +84,7 @@ Now it's time for children to investigate the code by changing things. As above,
 
 For example, look at the code for the green rocket, which draws a square:
 
-![Code for how the green rocket is animated](./resources/green-rocket-code.png)
+![Code for how the green rocket is animated](./resources/4-green-rocket-code.png)
 
 Children could explore:
 
@@ -111,6 +118,8 @@ It's worth mentioning that children will only get so far replacing numbers rando
 
 Finally, it's time for children to make their own animations. This will likely take a few lessons, and involve some trial and error, so children should be signed into their Scratch accounts and have named and saved their project before they start work.
 
+These session could begin with shared inputs on making a sprite move in a particular way, for example in a square, hexagon or triangle. It is easiest to iterate on this process in steps, i.e. by making a sprite move in a square in one `repeat` loop, then adding an outer `repeat` loop to make the whole square happen more than once.
+
 There is no reason children's animations should involve rockets. They could create animal animations around a habitat, boats on a river, people around a town, or anything that fits with the class' current topic.
 
 Before coding anything, children should plan their work on paper.
@@ -140,4 +149,4 @@ This specific block of pseudo code is not perfect and probably won't work exactl
 
 As always, allow ample time for children to iterate on their code, to share it with their peers, to evaluate each others' work and improve their own animations.
 
-> **A note on curved motion** - describing curved motion can be tricky. There is a certain amount that can be done with the `rotate _ degrees` and `move _ steps` blocks, as shown in the original project. But this technique only goes so far, and move complex motion eventually needs trigonometry. Depending what children what to create, it's probably worth guiding them towards straight line motion, as this is often a lot simpler.
+> **A note on curved motion** - describing curved motion can be tricky. There is a certain amount that can be done with the `rotate _ degrees` and `move _ steps` blocks, as shown in the original project. But this technique only goes so far, and more complex motion eventually needs trigonometry. Depending what children what to create, it's probably worth guiding them towards straight line motion, as this is often a lot simpler.
