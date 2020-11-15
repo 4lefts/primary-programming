@@ -1,12 +1,14 @@
 {% extends "layout.njk" %}
 {% block content %}
   {{content | safe}}
-  <h3>Projects for {{tags}}</h3>
-  <ol>
-  {% for project in collections[tags] -%}
-  <li {% if project.url == page.url %} class="current-project" {% endif %}>
-    <a href="{{project.url}}">{{project.data.title}}</a>
-  </li>
-  {%- endfor %}
-  </ol>
+  <div class="other-projects">
+    <h3>Projects for {{tags}}</h3>
+    <ol>
+    {% for project in collections[tags] -%}
+    <li {% if project.url == page.url %} class="current-project" {% endif %}>
+      <a href="{{project.url}}">{{project.data.title}}</a>
+    </li>
+    {%- endfor %}
+    </ol>
+  </div>
 {% endblock %}

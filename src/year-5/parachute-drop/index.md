@@ -2,7 +2,7 @@
 title: Parachute Drop
 ---
 
-{% projectheader "4 - 5 Sessions",  "./resources/resources.zip" %}
+{% projectheader "Year 5", "4 - 5 Sessions",  "./resources/resources.zip" %}
 {{title}}
 {% endprojectheader %}
 

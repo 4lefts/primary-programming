@@ -22,12 +22,12 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/**/*.png");
   eleventyConfig.addPassthroughCopy("src/**/*.sb3");
   eleventyConfig.addPassthroughCopy("src/**/*.zip");
-  eleventyConfig.addPairedShortcode("projectheader", function(title, duration, resourcesLink){
+  eleventyConfig.addPairedShortcode("projectheader", function(title, year, duration, resourcesLink){
     return `
 <header>
 <div class="headings">
 <h1>${title}</h1>
-<h4>${duration}</h4>
+<h4>${year}, ${duration}</h4>
 </div>
 <a class="resources-dl" href=${resourcesLink} download>
 Download Project Resources
