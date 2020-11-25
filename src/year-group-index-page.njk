@@ -3,11 +3,10 @@ pagination:
   data: years
   size: 1
   alias: year
-permalink: "/{{year.title | slug}}/"
+permalink: "/projects/{{year.title | slug}}/"
 layout: default.njk
 ---
-<h1>{{year.title}}</h1>
-<h2>Objectives</h2>
+<h1>{{year.title}} Objectives</h1>
 
 {% for curriculum in collections.curricula -%}
 {%- if curriculum.data.title == year.title -%}
@@ -21,6 +20,7 @@ layout: default.njk
 
 <ol>
 {%- for project in collections[year.title] -%}
+
 <li><a href="{{project.url}}">{{project.data.title}}</a></li>
 {%- endfor -%}
 </ol>
