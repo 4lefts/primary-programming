@@ -24,15 +24,14 @@ For tips and advice with all of the above, please see the [Scratch Help page](/s
 
 ### Suggested Session Breakdown
 
-The outline below is a very rough guide, and depends on learners being comfortable with logging in to Scratch, creating, saving programs, and using a class studio to find, remix and share projects.
+The outline below is a very rough guide, and depends on learners confidence with Scratch. Take as much time as your learners need to complete each part - there's nothing wrong with these projects taking significantly longer than the sessions outlined here.
 
-| Session | Suggested Outline                                                                                                                                                                                  |
-| ------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 1       | Showing the code and [predicting](#predict) what it does; [running](#run) the game; beginning paired work on commenting the code - predicting and running will need to run work in tandem          |
-| 2       | Reviewing comments made last time; finishing commenting of code; guided/shared [investigation](#investigate) of code                                                                               |
-| 3       | Beginning the [make](#make) stage; creating small steps of the code (e.g. making a sprite fall under gravity/air resistance, making a sprite turn, creating, moving and deleting clones in a loop) |
-| 4       | Continuing the [make](#make) stage; designing original games on paper using the skills above; annotating with psuedo-code for key points                                                           |
-| 5 - 6   | [Making](#make) and testing games; sharing to class studio; giving peer feedback; iterating on this process                                                                                        |
+| Session | Suggested Outline                                                                                                                                                                                                                                                                                                                                                                                 |
+| ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1       | Showing the code and [predicting](#predict) what it does; [running](#run) the game; beginning paired work on commenting the code (this will be done on printouts of code) - predicting and running will need to run work in tandem                                                                                                                                                                |
+| 2       | Reviewing comments made last time; finishing commenting of code; guided/shared [investigation](#investigate) of code - changing things together to see what happens; beginning the [make](#make) stage; creating small steps of the code (drawing a sprite, making a sprite follow the mouse, making a sprite follow another sprite, making a sprite move randomly, detecting if two sprites hit) |
+| 3       | Continuing the [make](#make) stage; designing original games on paper using the skills above; annotating with psuedo-code for key points                                                                                                                                                                                                                                                          |
+| 4 - 5   | [Making](#make) and testing games; sharing to class studio; giving peer feedback; iterating on this process                                                                                                                                                                                                                                                                                       |
 
 ## Predict
 
