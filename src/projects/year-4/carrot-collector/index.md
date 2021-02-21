@@ -19,7 +19,7 @@ The outline below is a very rough guide, and depends on learners being comfortab
 | Session | Suggested Outline                                                                                                                                                                                  |
 | ------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | 1       | Reading the code, making [predictions](#predict); learning/revising how to log in to Scratch, how to remix projects; [playing](#run) the game; discussing how it works, and what could be improved |
-| 2       | Replaying the game; creating a remix, discussing commenting; making comments on code; [investigating](#investigate) how the code can be changed; making notes about changes                        |
+| 2       | Replaying the game; creating a remix, discussing commenting; making comments on code; [investigating](#investigate) how the code can be [modifyied](#modify); making notes about changes           |
 | 3       | Beginning [making](#make); teach steps necessary to make the game (e.g. making varibles); designing games on paper.                                                                                |
 | 4 -5    | Making the games as designed; submitting to class studio; playing and testing each others' games; responding to feedback                                                                           |
 
@@ -75,6 +75,16 @@ Children should write comments on the code to explain what each part does, payin
 > Comments can be added by right clicking. Right clicking on the empty white "canvas", and choose "add comment", this adds a general comment. Right clicking on a specific block and choosing "add comment" add a commet with a red line pointing to that block.
 
 ## Investigate
+
+Next, the children should explore the code by asking and aswering more detailed questions about how it works. This might blend with the section above, or the next section. Children could work in pairs of similar abilities to answer questions such as:
+
+- Can they see where new ideas are being used? (In this project, variables for score and time, and the beginnings of selection, for ending the game.)
+- Can they see where inputs are being used? (Here, these are the button presses to control the character.)
+- Can they see where concepts they have learned before are being used, such as sequencing?
+- Can they explain how the flow of the program is being controlled?
+- Can they explain how the program is initialised, so that it runs the same each time?
+
+## Modify
 
 Now it's time for children to explore the code, by changing it. Again, they should work from a "remix" of the original code, and they should focus on the use of variables.
 
