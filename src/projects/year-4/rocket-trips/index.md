@@ -21,7 +21,7 @@ The outline below is a very rough guide, and depends on learners being comfortab
 | Session | Suggested Outline                                                                                                                                                                                                       |
 | ------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | 1       | Showing the code for white, yellow and green rockets, and [predicting](#predict) what they do; [running](#run) the project; paired work on commenting the code - predicting and running will need to run work in tandem |
-| 2       | [Investigation](#investigate) session - children explore changing values the code for themselves                                                                                                                        |
+| 2       | [Investigate](#investigate) and [modify](#modify) session - children explore changing values the code for themselves                                                                                                    |
 | 3       | Beginning to [make](#make) our own animations; designing and pseudo-coding on paper; shared coding inputs/plenaries one using `repeat` to animate paths                                                                 |
 | 4       | Continued [making](#make); adding animations to class studios; sharing and peer-reviewing work; making improvements                                                                                                     |
 
@@ -80,7 +80,17 @@ Children should write comments on the code to explain what each part does, payin
 
 ## Investigate
 
-Now it's time for children to investigate the code by changing things. As above, they should work from a remix of the project, and as always, should be encouraged to break things. Nothing can really go wrong; the worst that can happen is they have to get another copy of the original project. In this project this is even more the case than normal. The code for each rocket is laden with numbers that can have a huge effect on the animation.
+Now it's time for children to investigate the code in greater depth, by answering questions about it, and by generating their own. This can be done individually, or in pairs, but pairs should probably be of similar ability, as less able learners may not learn about how the code works if a more able peer simply tells them things. Some questions could include:
+
+- Can they see where new ideas are being used? (In this project, loops that repeat a given number of times.)
+- Can they see where inputs are being used? (Here, there are only `click` events on flags.)
+- Can they see where concepts they have learned before are being used, such as sequencing?
+- Can they explain how the flow of the program is being controlled? (i.e. with `repeat` blocks)
+- Can they explain how the program is initialised, so that it runs the same each time?
+
+## Modify
+
+Children should explore the code by changing things. As above, they should work from a remix of the project, and as always, should be encouraged to break things. Nothing can really go wrong; the worst that can happen is they have to get another copy of the original project. In this project this is even more the case than normal. The code for each rocket is laden with numbers that can have a huge effect on the animation.
 
 For example, look at the code for the green rocket, which draws a square:
 
