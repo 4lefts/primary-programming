@@ -23,7 +23,7 @@ The outline below is a very rough guide, and depends on learners being comfortab
 | Session | Suggested Outline                                                                                                                                                                                  |
 | ------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | 1       | Showing the code and [predicting](#predict) what it does; [running](#run) the game; beginning paired work on commenting the code - predicting and running will need to run work in tandem          |
-| 2       | Reviewing comments made last time; finishing commenting of code; guided/shared [investigation](#investigate) of code                                                                               |
+| 2       | Reviewing comments made last time; finishing commenting of code; guided/shared [investigation](#investigate) and [modification](#modify) of code                                                   |
 | 3       | Beginning the [make](#make) stage; creating small steps of the code (e.g. making a sprite fall under gravity/air resistance, making a sprite turn, creating, moving and deleting clones in a loop) |
 | 4       | Continuing the [make](#make) stage; designing original games on paper using the skills above; annotating with psuedo-code for key points                                                           |
 | 5 - 6   | [Making](#make) and testing games; sharing to class studio; giving peer feedback; iterating on this process                                                                                        |
@@ -91,9 +91,19 @@ Children should write comments on the code to explain what each part does, payin
 
 ## Investigate
 
-Next, children should explore the code by changing it, again working from a "remix" of the project.
+Next, children should explore the code; this is where they should start to understand it. One way for them to do this is by answering questions such as:
 
-Initially, they can explore making changes to numbers, running the code, and seeing what happens. They should be taught to make a mental note of what a number was before they changed it, so that they can change it back. Then guide them to explore
+- Can they see where new ideas are being used? (In this project, variables to model physical forces.)
+- Can they see where inputs are being used?
+- Can they see where concepts they have learned before are being used, such as selection?
+- Can they explain how the flow of the program is being controlled?
+- Can they explain how the program is initialised, so that it runs the same each time?
+
+## Modify
+
+Now, children can further explore the program by changing it, again working from a "remix" of the project.
+
+Initially, they can explore making changes to numbers, running the code, and seeing what happens. They should be taught to make a mental note of what a number was before they changed it, so that they can change it back. Then guide them to explore:
 
 - What happens when the `gravity` and `air` resistance are changed?
 - What happens if we change the `wind` variable?
